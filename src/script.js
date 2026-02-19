@@ -17,7 +17,7 @@ elemAge.textContent = ageOfPerson;
 elemAge.setAttribute("datetime", ageOfPerson);
 
 // Days Until Event
-const daysUntil = getDaysUntilEvent("2026-12-25");
+const daysUntil = getDaysUntilEvent("2026-06-15");
 const elemEvent = document.querySelector('.daysUntilEvent');
 elemEvent.textContent = daysUntil;
 
