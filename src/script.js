@@ -10,11 +10,11 @@ initClock();
 // Date
 initDate();
 
-// Age of Person
-const ageOfPerson = calculateAgeOf("2000-01-01");
+// Anniversary
+const ageOfAnniversary = calculateAgeOf("2000-01-01");
 const elemAge = document.querySelector('.ageOfPerson');
-elemAge.textContent = ageOfPerson;
-elemAge.setAttribute("datetime", ageOfPerson);
+elemAge.textContent = ageOfAnniversary;
+elemAge.setAttribute("datetime", ageOfAnniversary);
 
 // Days Until Event
 const daysUntil = getDaysUntilEvent("2026-06-15");
