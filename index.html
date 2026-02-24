@@ -13,25 +13,27 @@
 
   </head>
 
-<body class="min-h-screen flex justify-center items-center bg-new-hotness">
+<body class="min-h-screen flex justify-center items-center bg-new-hotness" style="background-image: url('public/mindul-dashbard-background.png'); background-size: cover; background-position: center;">
+ 
 
-    <main class="w-[90%] max-w-7xl grid grid-cols-4 gap-4">
+    <main class="w-[90%] max-w-7xl grid grid-cols-3 gap-5
+    ">
 
-        <section class="col-span-3 row-span-3 bg-white p-4 border text-9xl font-black tracking-tighter tabular-nums text-zinc-900 leading-none rounded-3xl p-4" role="region" aria-label="Time">
-          <time class="time">
-            <span class="hours">HH</span>:<span class="minutes">MM</span>:<span class="seconds">SS</span>
-            <span class="amOrPm">AM/PM</span>
-          </time>
-        </section>
+    <section class="col-span-2 row-span-3 bg-white p-4 border rounded-3xl flex flex-col justify-between" role="region" aria-label="Time and Date">
+  
+  <time class="time text-9xl font-black tracking-tighter tabular-nums text-zinc-900 leading-none">
+    <span class="hours">HH</span>:<span class="minutes">MM</span>:<span class="seconds">SS</span>
+    <span class="amOrPm">AM/PM</span>
+  </time>
 
-        <section class="row-span-2 bg-white p-4 border" role="region" aria-label="Date">
-          <time class="date">
-            <span class="month">January</span>
-            <span class="dayOfMonth">29</span>,
-            <span class="year">2024</span> —
-            <span class="dayOfWeek">Monday</span>
-          </time>
-        </section>
+  <time class="date  text-2xl font-medium text-zinc-400 tracking-wide mt-2">
+    <span class="month">January</span>
+    <span class="dayOfMonth">29</span>,
+    <span class="year">2024</span> —
+    <span class="dayOfWeek">Monday</span>
+  </time>
+
+</section>
 
         <section class="bg-white p-4 border" role="region" aria-label="Days until event">
           <p>🎓 Days until Graduation: <time class="daysUntilEvent">000</time></p>
@@ -44,6 +46,15 @@
         <section class="bg-white p-4 border" role="region" aria-label="Age">
           <p>Anniversary: <time class="ageOfPerson">000</time>Years</p>
         </section>
+
+
+<section>
+  <section class="col-span-2 row-span-3 bg-white p-4 border rounded-3xl" role="region" aria-label="Coffee">
+  <p class="text-xs text-zinc-400 uppercase tracking-widest mb-2">☕ Today's Order</p>
+  <p class="text-xl font-black text-zinc-900" id="coffee-drink"></p>
+  <p class="text-sm text-zinc-400 mt-1" id="coffee-details"></p>
+</section>
+</section>
 
     </main>
     
