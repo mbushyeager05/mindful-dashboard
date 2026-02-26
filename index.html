@@ -13,20 +13,19 @@
 
   </head>
 
-<body class="min-h-screen flex justify-center items-center bg-new-hotness" style="background-image: url('public/mindul-dashbard-background.png'); background-size: cover; background-position: center;">
+<body class="min-h-screen flex justify-center items-center bg-new-hotness" style="background-image: url('public/mindful-dashboard-background.png'); background-size: cover; background-position: center;">
  
 
-    <main class="w-[90%] max-w-7xl grid grid-cols-3 gap-5
-    ">
+    <main class="w-[90%] max-w-7xl grid grid-cols-3 gap-5">
 
-    <section class="col-span-2 row-span-3 bg-white p-4 border rounded-3xl flex flex-col justify-between" role="region" aria-label="Time and Date">
+    <section class="col-span-2 row-span-2 bg-orange-50 p-4 border rounded-3xl flex flex-col justify-between" role="region" aria-label="Time and Date">
   
-  <time class="time text-9xl font-black tracking-tighter tabular-nums text-zinc-900 leading-none">
+  <time class="time text-9xl font-black tracking-tighter tabular-nums text-neutral-800 leading-none bg-orange-50">
     <span class="hours">HH</span>:<span class="minutes">MM</span>:<span class="seconds">SS</span>
     <span class="amOrPm">AM/PM</span>
   </time>
 
-  <time class="date  text-2xl font-medium text-zinc-400 tracking-wide mt-2">
+  <time class="date  text-2xl font-medium text-zinc-400 tracking-wide mt-2 bg-orange-50">
     <span class="month">January</span>
     <span class="dayOfMonth">29</span>,
     <span class="year">2024</span> —
@@ -35,26 +34,48 @@
 
 </section>
 
-        <section class="bg-white p-4 border" role="region" aria-label="Days until event">
-          <p>🎓 Days until Graduation: <time class="daysUntilEvent">000</time></p>
-        </section>
-
-        <section class="bg-white p-4 border" role="region" aria-label="Streak">
-          <p>Streak: <time class="streakOfDays">000</time></p>
-        </section>
-
-        <section class="bg-white p-4 border" role="region" aria-label="Age">
-          <p>Anniversary: <time class="ageOfPerson">000</time>Years</p>
-        </section>
-
-
-<section>
-  <section class="col-span-2 row-span-3 bg-white p-4 border rounded-3xl" role="region" aria-label="Coffee">
-  <p class="text-xs text-zinc-400 uppercase tracking-widest mb-2">☕ Today's Order</p>
-  <p class="text-xl font-black text-zinc-900" id="coffee-drink"></p>
-  <p class="text-sm text-zinc-400 mt-1" id="coffee-details"></p>
+<section class="col-span-1 row-span-2 p-4 border rounded-3xl bg-orange-50 flex items-center gap-3" role="region" aria-label="Coffee">
+    <svg class="w-32 h-32 shrink-0 mt-1" fill="#78716c" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#78716c"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.2"></g><g id="SVGRepo_iconCarrier"><path d="M15.427734 3C14.062745 3 12.859456 3.9323872 12.521484 5.2558594L12.074219 7L12 7C11.133553 7 10.343298 7.2932543 9.7636719 7.7890625C9.1840453 8.2848707 8.8153921 8.9380401 8.5664062 9.625C8.0684347 10.99892 8 12.57785 8 14 A 1.0001 1.0001 0 0 0 9 15L10.119141 15L13.970703 45.017578 A 1.0001 1.0001 0 0 0 13.974609 45.042969C14.160517 46.237774 15.204427 47 16.367188 47L33.630859 47C34.794193 47 35.83786 46.235688 36.023438 45.042969 A 1.0001 1.0001 0 0 0 36.027344 45.017578L39.880859 15L41 15 A 1.0001 1.0001 0 0 0 42 14C42 12.57785 41.931565 10.99892 41.433594 9.625C41.184608 8.9380401 40.815955 8.2848707 40.236328 7.7890625C39.656702 7.2932543 38.866447 7 38 7L37.90625 7L37.474609 5.2734375 A 1.0001 1.0001 0 0 0 37.474609 5.2714844C37.141393 3.9416023 35.934385 3 34.5625 3L15.427734 3 z M 15.427734 5L34.5625 5C35.026615 5 35.42042 5.3076915 35.533203 5.7578125L35.84375 7L14.138672 7L14.458984 5.7519531C14.573013 5.3054253 14.966724 5 15.427734 5 z M 12.912109 8.9960938 A 1.0001 1.0001 0 0 0 13 9L37 9 A 1.0001 1.0001 0 0 0 37.064453 8.9980469 A 1.0001 1.0001 0 0 0 37.125 9L38 9C38.459053 9 38.706095 9.1106518 38.9375 9.3085938C39.168905 9.5065356 39.385047 9.8386001 39.554688 10.306641C39.802098 10.989256 39.830025 12.022136 39.878906 13L11.166016 13 A 1.0001 1.0001 0 0 0 10.955078 12.986328 A 1.0001 1.0001 0 0 0 10.835938 13L10.121094 13C10.169974 12.022136 10.197905 10.989256 10.445312 10.306641C10.614953 9.8386001 10.831095 9.5065355 11.0625 9.3085938C11.293905 9.1106518 11.540947 9 12 9L12.849609 9 A 1.0001 1.0001 0 0 0 12.912109 8.9960938 z M 12.136719 15L37.863281 15L36.708984 24L31.984375 24C30.659565 21.085293 28.095496 19.012008 24.992188 19.003906C24.945978 19.002306 24.902818 19.004791 24.857422 19.007812C21.786193 19.059813 19.278095 21.123031 17.988281 24L13.291016 24L12.136719 15 z M 24.945312 20.998047C24.966323 20.999147 24.947809 21 24.974609 21C27.392834 21 29.474358 22.682557 30.451172 25.34375 A 1.0001 1.0001 0 0 0 31.388672 26L31.490234 26L36.451172 26L35.810547 31L31.527344 31L31.388672 31 A 1.0001 1.0001 0 0 0 30.447266 31.660156C30.227471 32.270178 29.97672 32.828834 29.671875 33.296875C28.538498 35.034193 26.884731 35.976012 25.087891 35.998047L25.021484 35.998047C23.246013 35.998047 21.592289 35.09639 20.431641 33.398438 A 1.0001 1.0001 0 0 0 20.431641 33.396484C20.091871 32.900328 19.8123 32.306572 19.574219 31.65625 A 1.0001 1.0001 0 0 0 18.634766 31L18.521484 31L14.189453 31L13.548828 26L18.484375 26L18.589844 26 A 1.0001 1.0001 0 0 0 19.529297 25.339844C20.477663 22.708373 22.511851 21.026828 24.917969 21 A 1.0001 1.0001 0 0 0 24.945312 20.998047 z M 24.939453 23C23.705063 23.01347 22.665152 23.777929 22.001953 24.794922C21.338753 25.811913 20.978618 27.119966 20.994141 28.542969C21.009661 29.965972 21.398756 31.267249 22.083984 32.269531C22.769211 33.271814 23.826157 34.013466 25.060547 34C26.294937 33.98654 27.334848 33.22207 27.998047 32.205078C28.661247 31.188086 29.021382 29.880035 29.005859 28.457031C28.990339 27.034028 28.601244 25.732752 27.916016 24.730469C27.230789 23.728186 26.173843 22.986534 24.939453 23 z M 24.960938 25C25.386064 24.9954 25.843602 25.244939 26.263672 25.859375C26.683742 26.473812 26.994273 27.416385 27.005859 28.478516C27.017449 29.540646 26.728831 30.489827 26.322266 31.113281C25.915699 31.736734 25.464189 31.995363 25.039062 32C24.613936 32.0046 24.156399 31.755062 23.736328 31.140625C23.316259 30.526189 23.005727 29.583615 22.994141 28.521484C22.982551 27.459353 23.271169 26.510173 23.677734 25.886719C24.084301 25.263265 24.535811 25.004637 24.960938 25 z M 14.445312 33L18.021484 33C18.24578 33.51991 18.454188 34.047503 18.78125 34.525391C20.264602 36.695438 22.552956 37.998047 25.021484 37.998047L25.091797 37.998047 A 1.0001 1.0001 0 0 0 25.101562 37.998047C27.60154 37.971307 29.89481 36.614655 31.345703 34.390625 A 1.0001 1.0001 0 0 0 31.347656 34.390625C31.635588 33.948746 31.81459 33.471059 32.013672 33L35.554688 33L34.048828 44.736328C34.042405 44.777609 33.827526 45 33.630859 45L16.367188 45C16.173946 45 15.95727 44.775524 15.951172 44.736328L14.445312 33 z"></path></g></svg>
+  <div>
+    <p class="text-m text-neutral-400 uppercase tracking-widest mb-2">Today's Order</p>
+    <p class="text-2xl font-black text-neutral-800" id="coffee-drink"></p>
+    <p class="text-m text-neutral-400 mt-1" id="coffee-details"></p>
+  </div>
 </section>
+
+        <section class="col-span-1 row-span-2 p-3 border bg-orange-50 flex items-center gap-3 rounded-3xl" role="region" aria-label="Days until event">
+          <svg class="w-25 h-25 shrink-0" fill="#78716c" viewBox="0 -64 640 640" xmlns="http://www.w3.org/2000/svg" stroke="#78716c"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M622.34 153.2L343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"></path></g></svg>
+          <div class="flex flex-col justify-center">
+            <p class="text-xl font-black text-neutral-800">Days until Graduation: <time class="daysUntilEvent">000</time> </p>
+            <p class="text-xl text-neutral-400 uppercase tracking-widest mb-2 p-2">"The details are not the details. They make the design."</p>
+          </div>
+        </section>
+
+        <section class=" p-4 border bg-orange-50 flex items-center gap-3 rounded-3xl" role="region" aria-label="Streak">
+          <svg class="w-20 h-20 shrink-0" fill="#78716c" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" stroke="#78716c"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M510.633,312.157c-1.655-2.867-4.6-4.753-7.896-5.057c-2.145-0.197-47.182-4.084-99.312,11.3 c26.328-66.804,20.892-130.565,20.604-133.685c-0.304-3.296-2.189-6.241-5.057-7.896c-2.867-1.655-6.359-1.816-9.367-0.43 c-2.376,1.094-53.024,24.801-96.25,73.73c-12.294-68.888-47.239-119.028-49.03-121.56c-1.911-2.703-5.016-4.31-8.328-4.31 c-3.312,0-6.416,1.607-8.328,4.31c-1.791,2.531-36.734,52.671-49.03,121.56c-43.226-48.93-93.874-72.636-96.25-73.73 c-3.006-1.385-6.5-1.225-9.367,0.43s-4.753,4.6-5.057,7.896c-0.289,3.121-5.725,66.883,20.604,133.687 c-52.132-15.383-97.17-11.499-99.31-11.302c-3.296,0.304-6.241,2.19-7.896,5.057s-1.816,6.359-0.43,9.367 c1.384,3.007,34.718,74.09,104.598,114.435c51.68,29.838,107.921,33.957,135.047,33.957c7.857,0,13.268-0.346,15.42-0.512 c2.152,0.167,7.56,0.512,15.42,0.512c27.128,0,83.37-4.122,135.047-33.957c69.88-40.345,103.213-111.428,104.598-114.435 C512.45,318.518,512.288,315.024,510.633,312.157z M115.733,418.294c-46.299-26.731-75.771-69.419-88.691-91.331 c19.957,0.158,56.079,2.755,93.151,16.865c1.516,2.888,3.091,5.771,4.748,8.639c26.426,45.771,64.75,77.386,92.361,95.908 C189.735,445.993,151.155,438.746,115.733,418.294z M142.607,342.268c-30.576-52.959-34.747-112.22-34.81-139.876 c20.007,11.603,57.699,36.729,87.32,75.55c-0.459,6.178-0.713,12.457-0.713,18.83c0,55.065,18.368,103.46,33.547,134.055 C202.242,413.426,166.706,384.01,142.607,342.268z M256,439.788c-14.113-24.479-41.197-79.709-41.197-143.016 S241.889,178.233,256,153.757c14.113,24.479,41.197,79.709,41.197,143.016S270.11,415.312,256,439.788z M317.595,296.771 c0-6.372-0.254-12.652-0.713-18.829c29.632-38.833,67.34-63.965,87.341-75.561c-0.037,27.613-4.169,86.782-34.829,139.886 c-24.03,41.622-59.583,71.06-85.315,88.497C299.252,400.166,317.595,351.801,317.595,296.771z M396.267,418.294 c-35.422,20.45-74.002,27.698-101.568,30.081c27.61-18.522,65.934-50.137,92.359-95.907c1.656-2.869,3.233-5.752,4.75-8.642 c36.96-14.064,73.145-16.67,93.138-16.844C472.018,348.904,442.55,391.572,396.267,418.294z"></path> </g> </g> <g> <g> <path d="M173.386,129.797c-16.59,0-30.088,13.498-30.088,30.088s13.498,30.088,30.088,30.088s30.088-13.498,30.088-30.088 S189.976,129.797,173.386,129.797z M173.386,169.574c-5.342,0-9.689-4.347-9.689-9.689s4.347-9.689,9.689-9.689 s9.689,4.347,9.689,9.689S178.729,169.574,173.386,169.574z"></path> </g> </g> <g> <g> <path d="M338.613,129.797c-16.59,0-30.088,13.498-30.088,30.088s13.498,30.088,30.088,30.088c16.59,0,30.088-13.498,30.088-30.088 S355.203,129.797,338.613,129.797z M338.613,169.574c-5.342,0-9.689-4.347-9.689-9.689s4.347-9.689,9.689-9.689 c5.342,0,9.689,4.347,9.689,9.689S343.956,169.574,338.613,169.574z"></path> </g> </g> <g> <g> <path d="M256,42.083c-16.59,0-30.088,13.498-30.088,30.088S239.41,102.259,256,102.259s30.088-13.498,30.088-30.088 S272.59,42.083,256,42.083z M256,81.86c-5.342,0-9.689-4.347-9.689-9.689s4.347-9.689,9.689-9.689s9.689,4.347,9.689,9.689 S261.342,81.86,256,81.86z"></path> </g> </g> <g> <g> <path d="M266.206,368.497c-5.316-1.86-11.134,0.938-12.998,6.254c-1.253,3.578-2.09,5.565-2.094,5.572 c-2.208,5.183,0.204,11.174,5.386,13.381c1.303,0.555,2.659,0.818,3.993,0.818c3.964,0,7.735-2.326,9.388-6.204 c0.108-0.255,1.105-2.614,2.578-6.823C274.323,376.179,271.522,370.359,266.206,368.497z"></path> </g> </g> <g> <g> <path d="M286.127,291.364c-0.181-5.63-4.905-10.05-10.521-9.866c-5.63,0.181-10.047,4.892-9.866,10.522 c0.56,17.412-0.977,35.317-4.569,53.215c-1.109,5.523,2.47,10.898,7.993,12.007c0.677,0.136,1.351,0.201,2.017,0.201 c4.759,0,9.016-3.349,9.989-8.195C285.07,329.814,286.737,310.34,286.127,291.364z"></path> </g> </g> </g></svg>
+          <div class="flex flex-col justify-center">
+            <p class="text-xl font-black text-neutral-400">Progress, not perfection.</p>
+            <p class="text-2xl font-black text-neutral-800">Days of Meditation: <time class="streakOfDays">000</time></p>
+          </div>
+        </section>
+
+        <section class=" p-4 border bg-orange-50 rounded-3xl flex items-center gap-3" role="region" aria-label="Age">
+          <svg class="w-10 h-10 shrink-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#78716c"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3 9H21M7 3V5M17 3V5M6 12H8M11 12H13M16 12H18M6 15H8M11 15H13M16 15H18M6 18H8M11 18H13M16 18H18M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z" stroke="#78716c" stroke-width="2" stroke-linecap="round"></path> </g></svg>
+          <p class="text-2xl font-black text-neutral-800">Studying Design: <time class="ageOfPerson">000</time> Years</p>
+        </section>
+
+<section class=" col-span-2 row-span-1 bg-orange-50 p-4 border rounded-3xl flex items-center justify-between gap-3" role="region" aria-label="Daily Quote">
+  <div class="flex items-center gap-2 shrink-0">
+    <svg class="w-10 h-10 shrink-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#78716c"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10 16.584V18.9996C10 20.1042 10.8954 20.9996 12 20.9996C13.1046 20.9996 14 20.1042 14 18.9996L14 16.584M12 3V4M18.3643 5.63574L17.6572 6.34285M5.63574 5.63574L6.34285 6.34285M4 12H3M21 12H20M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z" stroke="#78716c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+    <p class="text-xl text-zinc-600 uppercase tracking-widest">Daily Quote</p>
+  </div>
+  <div class="text-left border-l-4 border-zinc-300 pl-4">
+    <p class="text-4xl font-black text-neutral-800 leading-relaxed italic" id="daily-quote"></p>
+    <p class="text-xl text-zinc-400 mt-2" id="quote-author"></p>
+  </div>
 </section>
+
+
 
     </main>
     
